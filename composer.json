@@ -1,0 +1,25 @@
+{
+  "name": "quideroli/httprequest",
+  "description": "Component for GET, POST, PUT, DELETE requests using Guzzle!",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Willian Quideroli",
+      "email": "willian@quideroli.com.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "php": "^7.2.5 || ^8.0",
+    "guzzlehttp/guzzle": "7.*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "quideroli\\httpRequest\\": "src"
+    }
+  }
+}
