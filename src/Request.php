@@ -13,7 +13,7 @@ class Request
         $this->config = [
             "headers" => $header,
             "query" => $query,
-            "body" => empty($body) ? json_encode($body) : "{}"
+            "body" => !empty($body) ? json_encode($body) : "{}"
         ];
     }
 
