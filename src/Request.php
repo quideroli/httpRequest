@@ -65,6 +65,9 @@ class Request
     public function fail($show=true)
     {
         if($show==true){
+            header('Cache-Control: no-cache, must-revalidate');
+            header('Content-Type: application/json');
+
             http_response_code($this->error->getCode());
             echo $this->error->getResponse()->getBody();
             exit();
